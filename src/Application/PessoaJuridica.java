@@ -22,9 +22,9 @@ public class PessoaJuridica extends Pessoa{
 	@Override
 	public double imposto() {
 		if(numeroFuncionarios < 10){
-			this.setImposto(getImposto()*0.16);
+			this.setImposto(getRendaAnual()*0.16);
 		}else{
-			this.setImposto(getImposto()*0.14);
+			this.setImposto(getRendaAnual()*0.14);
 		}
 		return this.getImposto();
 	}
